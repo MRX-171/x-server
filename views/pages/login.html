@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - x-server</title>
+    <link rel="stylesheet" href="./css/login.css">
+  </head>
+  <body>
+    <div class="background"></div>
+
+    <div class="login-container">
+      <h2>Bem-vindo ao x-server</h2>
+      <input
+        type="text"
+        class="input-field"
+        placeholder="Usuário"
+        id="username"
+        required
+      />
+      <input
+        type="password"
+        class="input-field"
+        placeholder="Senha"
+        id="password"
+        required
+      />
+      <button class="login-btn" onclick="login()">Entrar</button>
+      <div class="footer">
+        <p>
+          Não tem uma conta?
+          <a href="/cadastro" style="color: #9b4dff">Cadastre-se</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function login() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username === "" || password === "") {
+          alert("Por favor, preencha todos os campos.");
+        } else {
+          window.location.href = "/app";
+        }
+      }
+    </script>
+  </body>
+</html>
