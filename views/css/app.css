@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  background-color: #121212; /* Cor de fundo para garantir que a página não fique com espaços em branco */
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://wallpapergod.com/images/hd/4k-gaming-4096X2160-wallpaper-oh5okupfzclkbzcy.jpeg') no-repeat center center fixed;
+  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Um overlay escuro para garantir que o texto seja legível */
+  z-index: -1;
+}
+
+section.game-intro {
+  margin-top: 50px;
+  animation: slideIn 1s ease-out;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
