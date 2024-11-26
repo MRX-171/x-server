@@ -1,4 +1,5 @@
 const router = require("./private");
+const { TEMPLATES } = require("../configs");
 
 router.get("/login", (req, res) => {
   if (res.status(200)) {
