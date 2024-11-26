@@ -1,0 +1,20 @@
+{
+  "name": "x-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server/index.js",
+    "test": "nodemon ./server/index.js",
+    "dev": "node --watch --no-warnings ./server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cfonts": "^3.3.0",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "terminal-kit": "^3.1.1"
+  }
+}
